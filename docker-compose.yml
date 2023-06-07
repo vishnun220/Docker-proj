@@ -1,1 +1,30 @@
 
+version: '3'
+services:
+  ant:
+    image: vishnun1/antrepo:latest
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 3
+
+  bat:
+    image: vishnun1/batrepo:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  cat:
+    image: vishnun1/catrepo:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  dog:
+    image: vishnun1/dogrepo:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
